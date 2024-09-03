@@ -2,8 +2,8 @@
 pragma solidity ^0.8.19;
 
 import "forge-std/Test.sol";
-import "../src/StargateTransfer.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "../src/stargateTransfer.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract MockStargateRouter is IStargateRouter {
     function swap(
@@ -29,7 +29,7 @@ contract MockStargateRouter is IStargateRouter {
     }
 }
 
-contract MockToken is IERC20 {
+contract MockToken is ERC20 {
     mapping(address => uint256) private _balances;
     mapping(address => mapping(address => uint256)) private _allowances;
     uint256 private _totalSupply;

@@ -2,13 +2,13 @@
 pragma solidity ^0.8.19;
 
 import "forge-std/Script.sol";
-import "../src/StargateTransfer.sol"; // Adjust the path as needed
+import "../src/stargateTransfer.sol"; // Adjust the path as needed
 
 contract StargateTransferScript is Script {
     // Constants
     address constant STARGATE_ROUTER_OP_SEPOLIA = 0xa2dfFdDc372C6aeC3a8e79aAfa3953e8Bc956D63;
-    address constant USDC_OP_SEPOLIA = 0x5fd84259d66Cd46123540766Be93DFE6D43130D7;
-    uint16 constant DST_CHAIN_ID_ARB_SEPOLIA = 40231; // Arbitrum Sepolia chain ID
+    address constant USDC_OP_SEPOLIA = 0x488327236B65C61A6c083e8d811a4E0D3d1D4268;
+    uint16 constant DST_CHAIN_ID_ARB_SEPOLIA = 10231; // Arbitrum Sepolia chain ID
     uint256 constant SRC_POOL_ID = 1; // USDC pool ID on OP Sepolia
     uint256 constant DST_POOL_ID = 1; // USDC pool ID on Arbitrum Sepolia
 
