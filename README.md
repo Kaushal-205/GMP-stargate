@@ -1,67 +1,38 @@
 ## Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
-
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+Step 1: Run
 ```
+npm install
 
-### Test
+``` 
+and Install Openzeppline contracts using forge install
 
-```shell
-$ forge test
 ```
+forge install Openzepplin/openzepplin-contracts/
 
-### Format
+Step 2: Get USDC on Optimism
 
-```shell
-$ forge fmt
-```
+visit this link and mint some USDC for yourself
+https://sepolia-optimism.etherscan.io/address/0x488327236B65C61A6c083e8d811a4E0D3d1D4268#code
 
-### Gas Snapshots
+Enjoy!!!!!!! But use It wisely.
 
-```shell
-$ forge snapshot
-```
+Step 3: Run the command to test V1
 
-### Anvil
+forge script script/stargateTransfer.sol --rpc-url $OP_SEPOLIA_RPC_URL
+forge script script/stargateTransfer.sol --rpc-url $OP_SEPOLIA_RPC_URL --broadcast (To deploy as well)
 
-```shell
-$ anvil
-```
+Step 4: Run the command to test V2
 
-### Deploy
+forge script script/StarGateTransferV2.sol --rpc-url $OP_SEPOLIA_RPC_URL
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+Step 5: check the transction hash on Layer zero scan
 
-### Cast
+https://testnet.layerzeroscan.com/
 
-```shell
-$ cast <subcommand>
-```
+Step 6: To be continued
 
-### Help
+Adding LzCompose
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
-# GMP-stargate
+
+

@@ -5,7 +5,8 @@ libs = ["lib"]
 solc_version = "0.8.25"
 
 remappings = [
-    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/"
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "@layerzerolabs/=node_modules/@layerzerolabs/"
 ]
 
 [rpc_endpoints]

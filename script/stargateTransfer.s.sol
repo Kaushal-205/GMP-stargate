@@ -2,7 +2,8 @@
 pragma solidity ^0.8.19;
 
 import "forge-std/Script.sol";
-import "../src/stargateTransfer.sol"; // Adjust the path as needed
+import "../src/stargateTransfer.sol"; 
+
 
 contract StargateTransferScript is Script {
     // Constants

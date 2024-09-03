@@ -7,3 +7,6 @@
 [submodule "lib/openzeppelin-contracts"]
 	path = lib/openzeppelin-contracts
 	url = https://github.com/Openzeppelin/openzeppelin-contracts
+[submodule "lib/stargate-v2"]
+	path = lib/stargate-v2
+	url = https://github.com/stargate-protocol/stargate-v2.git
