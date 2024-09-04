@@ -22,14 +22,14 @@ Enjoy!!!!!!! But use It wisely.
 Step 3: Run the command to test V1
 
 ```
-forge script script/stargateTransfer.sol --rpc-url $OP_SEPOLIA_RPC_URL
-forge script script/stargateTransfer.sol --rpc-url $OP_SEPOLIA_RPC_URL --broadcast (To deploy as well)
+forge script script/stargateTransfer.s.sol --rpc-url $OP_SEPOLIA_RPC_URL
+forge script script/stargateTransfer.s.sol --rpc-url $OP_SEPOLIA_RPC_URL --broadcast (To deploy as well)
 ```
 
 Step 4: Run the command to test V2
 
 ```
-forge script script/StarGateTransferV2.sol --rpc-url $OP_SEPOLIA_RPC_URL
+forge script script/StarGateTransferV2.s.sol --rpc-url $OP_SEPOLIA_RPC_URL
 ```
 
 Step 5: check the transction hash on Layer zero scan
